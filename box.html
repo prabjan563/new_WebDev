@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            overflow-x: scroll;
+        }
+        .pic{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .pic img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            filter: grayscale();
+            transition: 0.3s;
+        }
+        .pic img:hover{
+            filter: none;
+            transform: scale(1.1) rotate(1deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, maiores? Nihil molestiae cupiditate repellat eaque quod facere eveniet commodi deserunt qui dolore voluptatem neque accusamus voluptatibus, numquam provident minus eius!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In vitae voluptatum culpa saepe vero quasi quisquam consequuntur sed et nisi repudiandae odio, nulla qui! Aliquid error corrupti laboriosam dignissimos? Assumenda?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur a sunt reprehenderit, culpa et est vero ipsa delectus veniam vel ad! Porro, dicta nostrum tempora temporibus necessitatibus totam illo.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos repellat veniam nesciunt amet eligendi consequatur sunt quo vel atque inventore soluta quia officiis repudiandae voluptatum molestias, adipisci autem animi.
+        </p>
+    </div>
+    <div class="pic">
+        <img src="https://i.pinimg.com/736x/a3/d2/74/a3d274a20a01a4acff57472cba40bf1a.jpg" alt="image-scene">
+    </div>
+</body>
+</html>
