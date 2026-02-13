@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burger House</title>
 </head>
 <style>
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+    }
+    .main-section img{
+        height: 120px;
+        width: 120px;
+        overflow: hidden;
+        object-fit: cover;
+
+    }
+    .main-section{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: rgb(194, 194, 122);
+        
     }
     .hero{
         display: flex;
@@ -45,6 +64,16 @@
 </style>
 <body>
     <section>
+        <div class="main-section">
+            <div>
+                <img src="assets\images\logo-burger.png" alt="logo">
+            </div>
+            <div>
+                <h1>Burger House</h1>
+            </div>
+        </div>
+    </section>
+    <section>
         <div class="hero">
             <div>
                 <h1>Welcome to Burger House</h1>
@@ -55,7 +84,14 @@
                 <button>Buy Now</button>
             </div>
             <div class="picture">
-                <img src="assets\images\burger.png" alt="burger images">
+                <a href="https://foodmandu.com/Restaurant/Details/677">
+                    <img src="assets\images\burger.png" alt="burger images">
+                </a>
+            </div>
+            <div class="picture">
+                <a href="https://foodmandu.com/Restaurant/Details/677">
+                    <img src="assets\images\pasta.png" alt="pasta">
+                </a>    
             </div>
         </div>
     </section>
